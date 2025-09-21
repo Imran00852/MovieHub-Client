@@ -44,27 +44,26 @@ Password: sample123
 
 ## 🖥️ Setup Instructions
 
-### 1. Clone Repo
+### 1. Clone Repo's
 
 ```bash
-git clone https://github.com/your-username/moviehub.git
-cd moviehub
+git clone https://github.com/Imran00852/MovieHub-Server
+git clone https://github.com/Imran00852/MovieHub-Client
 ```
 
 ### 2. Backend Setup
 
 ```bash
-cd backend
+cd MovieHub-Server
 npm install
 ```
 
 Create a `.env` file:
 
 ```env
-PORT=5000
+PORT=8080
 MONGO_URI=mongodb://localhost:27017/moviehub
 JWT_SECRET=your_jwt_secret
-NODE_ENV=development
 ```
 
 Start backend:
@@ -76,7 +75,7 @@ npm run dev
 ### 3. Frontend Setup
 
 ```bash
-cd ../frontend
+cd MovieHub-Client
 npm install
 npm start
 ```
@@ -150,7 +149,7 @@ Here’s the entity-relationship diagram for the project:
 
 - **Backend**: [Render]
 - **Frontend**: [Vercel]
-- **Live App**: [https://your-deployed-app.com](https://your-deployed-app.com)
+- **Live App**: [https://movie-hub-client-sand.vercel.app]
 
 ---
 
