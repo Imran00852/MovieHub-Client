@@ -135,40 +135,40 @@ erDiagram
 
 ### 🎬 Movies
 
-| Method | Endpoint          | Description                             |
-| ------ | ----------------- | --------------------------------------- |
-| POST   | `/api/movies`     | Add a new movie (auth required)         |
-| GET    | `/api/movies`     | Get all movies (sorted by score)        |
-| GET    | `/api/movies/:id` | Get single movie (with comments, votes) |
-| DELETE | `/api/movies/:id` | Delete movie (admin only)               |
+| Method | Endpoint             | Description                             |
+| ------ | -------------------- | --------------------------------------- |
+| POST   | `/api/v1/movies`     | Add a new movie (auth required)         |
+| GET    | `/api/v1/movies`     | Get all movies (sorted by score)        |
+| GET    | `/api/v1/movies/:id` | Get single movie (with comments, votes) |
+| DELETE | `/api/v1/movies/:id` | Delete movie (admin only)               |
 
 ---
 
 ### 👍 Votes
 
-| Method | Endpoint              | Description                                                              |
-| ------ | --------------------- | ------------------------------------------------------------------------ |
-| POST   | `/api/votes/:movieId` | Upvote or downvote a movie (1 = up, -1 = down). Updates if already voted |
+| Method | Endpoint                 | Description                                                              |
+| ------ | ------------------------ | ------------------------------------------------------------------------ |
+| POST   | `/api/v1/votes/:movieId` | Upvote or downvote a movie (1 = up, -1 = down). Updates if already voted |
 
 ---
 
 ### 💬 Comments
 
-| Method | Endpoint                   | Description              |
-| ------ | -------------------------- | ------------------------ |
-| POST   | `/api/comments/:movieId`   | Add a comment to a movie |
-| PUT    | `/api/comments/:commentId` | Edit your own comment    |
-| DELETE | `/api/comments/:commentId` | Delete your own comment  |
+| Method | Endpoint                      | Description              |
+| ------ | ----------------------------- | ------------------------ |
+| POST   | `/api/v1/comments/:movieId`   | Add a comment to a movie |
+| PUT    | `/api/v1/comments/:commentId` | Edit your own comment    |
+| DELETE | `/api/v1/comments/:commentId` | Delete your own comment  |
 
 ---
 
 ### 🔐 Admin
 
-| Method | Endpoint                         | Description                              |
-| ------ | -------------------------------- | ---------------------------------------- |
-| GET    | `/api/admin/movies/top`          | Get leaderboard of top movies (by score) |
-| DELETE | `/api/admin/movies/:movieId`     | Delete a movie + related votes/comments  |
-| DELETE | `/api/admin/comments/:commentId` | Delete any comment                       |
+| Method | Endpoint                            | Description                              |
+| ------ | ----------------------------------- | ---------------------------------------- |
+| GET    | `/api/v1/admin/movies/top`          | Get leaderboard of top movies (by score) |
+| DELETE | `/api/v1/admin/movies/:movieId`     | Delete a movie + related votes/comments  |
+| DELETE | `/api/v1/admin/comments/:commentId` | Delete any comment                       |
 
 ---
 
@@ -179,6 +179,11 @@ erDiagram
 - **Live App**: [https://your-deployed-app.com](https://your-deployed-app.com)
 
 ---
+
+### 📦 GitHub Repositories
+
+- **Backend Repo**: [https://github.com/Imran00852/MovieHub-Client]
+- **Frontend Repo**: [https://github.com/your-username/moviehub-frontend](https://github.com/your-username/moviehub-frontend)
 
 ## 🤖 AI Usage
 
@@ -191,4 +196,4 @@ AI was **only used for frontend**:
 
 - How to adapt AI-generated snippets to fit real data
 - How to structure reusable components with MUI
-- That using AI speeds up the development process significantly 🚀
+- That using AI speeds up the development process significantly
