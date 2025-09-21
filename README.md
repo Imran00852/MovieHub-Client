@@ -10,6 +10,18 @@ A full-stack MERN application where users can:
 
 ---
 
+## 🔑 Sample Credentials (for testing)
+
+To access the **Admin Dashboard**, you can either:
+
+- Change a user’s `role` to `admin` directly in the database, OR
+- Use the following test account:
+
+Email: sample123@gmail.com
+Password: sample123
+
+---
+
 ## 🚀 Tech Stack
 
 - **Frontend**: React, Redux Toolkit Query, Material-UI
