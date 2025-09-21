@@ -76,47 +76,9 @@ Backend runs on **http://localhost:5173**
 
 ## 🗄️ Database Schema (ERD)
 
-```mermaid
-erDiagram
-    USERS {
-        string _id
-        string name
-        string email
-        string passwordHash
-        string role
-        date createdAt
-    }
+Here’s the entity-relationship diagram for the project:
 
-    MOVIES {
-        string _id
-        string title
-        string description
-        string added_by (FK -> USERS)
-        date createdAt
-    }
-
-    VOTES {
-        string _id
-        string user_id (FK -> USERS)
-        string movie_id (FK -> MOVIES)
-        int vote_type (+1 / -1)
-        date createdAt
-    }
-
-    COMMENTS {
-        string _id
-        string user_id (FK -> USERS)
-        string movie_id (FK -> MOVIES)
-        string body
-        date createdAt
-    }
-
-    USERS ||--o{ MOVIES : "adds"
-    USERS ||--o{ VOTES : "casts"
-    USERS ||--o{ COMMENTS : "writes"
-    MOVIES ||--o{ VOTES : "receives"
-    MOVIES ||--o{ COMMENTS : "has"
-```
+![ER Diagram](public/image.png)
 
 ---
 
@@ -182,8 +144,8 @@ erDiagram
 
 ### 📦 GitHub Repositories
 
-- **Backend Repo**: [https://github.com/Imran00852/MovieHub-Client]
-- **Frontend Repo**: [https://github.com/your-username/moviehub-frontend](https://github.com/your-username/moviehub-frontend)
+- **Frontend Repo**: [https://github.com/Imran00852/MovieHub-Client]
+- **Backend Repo**: [https://github.com/Imran00852/MovieHub-Server]
 
 ## 🤖 AI Usage
 
